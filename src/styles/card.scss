@@ -71,26 +71,33 @@
   &__buy {
     width: 166px;
     height: 40px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
 
-    border-radius: 5px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 
     margin-left: $spacing;
     margin-right: $spacing;
     margin-top: $spacing;
 
+    border-radius: 5px;
+    border: 1px solid transparent;
+
     color: $color-background;
     background-color: $color-primary;
-  }
 
-  &__buy:hover {
-    color: $color-primary;
-    background-color: $color-background;
-    border: 1px solid $color-primary;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+      background-color: $color-background;
+      border: 1px solid $color-primary;
+    }
   }
 }
 
